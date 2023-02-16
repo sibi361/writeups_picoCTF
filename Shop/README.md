@@ -10,9 +10,13 @@ category: Reverse Engineering
 
 We are given a file named `source` which on inspecting with [binwalk](https://github.com/ReFirmLabs/binwalk/), shows that it's an [GO](<https://en.wikipedia.org/wiki/Go!_(programming_language)>) executable/binary. Along with this we are given a netcat hint: `nc mercury.picoctf.net 34938`.
 
+![its_go_binary.png](images/its_go_binary.png)
+
+---
+
 On running the `source` binary a menu-driven shop like interface is shown. The netcat connection also gives the same output. We can guess that we will get the flag if we buy the "Fruitful Flag" for a price of 100 coins. But we have only 40 coins.
 
-Since the only hint on the challenge tells us to try edge cases, we give option numbers not present in the menu but that just quits the program.
+Since the hint tells us to try edge cases, we give option numbers not present in the menu but that just quits the program.
 
 ![no_menu_pwn.png](images/no_menu_pwn.png)
 

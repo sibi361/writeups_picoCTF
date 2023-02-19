@@ -51,7 +51,7 @@ The two ASCII text files contain gibberish text which we guess to be [ROT13](htt
 
 ---
 
-Running binwalk on the three [BMP](https://en.wikipedia.org/wiki/BMP_file_format) files tells us that only `picture2.bmp` is useful as it has some compressed data embedded within it unlike the other two image files.
+Running `binwalk` on the three [BMP](https://en.wikipedia.org/wiki/BMP_file_format) files tells us that only `picture2.bmp` is useful as it has some compressed data embedded within it unlike the other two image files.
 
 ![picture2.png](images/picture2.png)
 
@@ -69,7 +69,11 @@ The data embedding was probably done using `steghide`, the stenography program t
 
 ---
 
-#### PENDING
+That didn't work. So we perform the `steghide extract` command on the other two image files even though `binwalk` has told us that they are nothing more than bitmap image files. But to our surprise that gets us the flag.
+
+![tftp_is_truly_trivial.png](images/tftp_is_truly_trivial.png)
+
+> The lesson learnt out of this is that in Foresics we should not leave any stone unturned. Even the most innocent looking thing could be the culprit.
 
 ...
 End of writeup

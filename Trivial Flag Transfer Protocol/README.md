@@ -73,7 +73,7 @@ That didn't work. So we perform the `steghide extract` command on the other two 
 
 ![tftp_is_truly_trivial.png](images/tftp_is_truly_trivial.png)
 
-> The lesson learnt out of this is that in Foresics we should not leave any stone unturned. Even the most innocent looking thing could be the culprit.
+> The lesson learnt out of this is that in Forensics we should not leave any stone unturned. Even the most innocent looking thing could be the culprit.
 
 ...
 End of writeup

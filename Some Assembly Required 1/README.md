@@ -28,7 +28,7 @@ Now we see that the function actually rotates the array till the value of the nu
 
 Going to the url on `line 54` gives us a binary file of unknown format.
 
-We manually substitute the values of the `nerys` decryption function to get better clarity. The `guhan` variable seems to contain a ["WebAssembly"](https://developer.mozilla.org/en-US/docs/WebAssembly) object which is then later exported to the `exports` varibale. `WebAssembly` is in simple terms a way to run programming languages like C/C++ in the browser. So the contents within `export` might be an executable.
+We manually substitute the values of the `nerys` decryption function to get better clarity. The `guhan` variable seems to contain a ["WebAssembly"](https://developer.mozilla.org/en-US/docs/WebAssembly) object which is then later exported to the `exports` variable. `WebAssembly` is in simple terms a way to run programming languages like C/C++ in the browser. So the contents within `export` might be an executable.
 
 The `charCodeAt()` function is used to return the UTF-16 character code of the given character. Hence the for loop seems to be running `line 62` passing the character code and index of every character in the textbox's input as arguments.
 
